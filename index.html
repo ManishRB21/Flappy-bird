@@ -313,7 +313,7 @@ let gravity = 0.4;
 let jump = -6;
 
 let pipes = [];
-let pipeGap = 130;
+let pipeGap = 160;
 let pipeSpeed = 2;
 let score = 0;
 let gameOver = false;
@@ -421,7 +421,7 @@ function update() {
       score++;
       scoreEl.textContent = score;
 
-      if (score === 5) win();
+      if (score === 10) win();
     }
 
     if (pipe.x < -50) {
