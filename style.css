@@ -1,0 +1,24 @@
+body {
+  transition: background 0.3s;
+}
+
+body.bad {
+  background: #ff4d4d;
+  animation: shake 0.3s;
+}
+
+body.good {
+  background: #4dff88;
+}
+
+body.neutral {
+  background: #ccc;
+}
+
+@keyframes shake {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  50% { transform: translateX(6px); }
+  75% { transform: translateX(-6px); }
+  100% { transform: translateX(0); }
+}
